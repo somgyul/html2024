@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Page</title>
+    <title>토끼와 거북이</title>
     <link type="text/css" rel="stylesheet" href="mycss.css">
+    <style>
+        img {
+            width: 100px;
+            display: block;
+            position: relative;
+            margin: 10px;
+            animation: myanim 5s infinite;
+        }
+        #img1 { animation-timing-function: ease-out; }
+        #img2 { animation-timing-function: ease-in; }
+        @keyframes myanim {
+            from { left: 0px; }
+            to { left: 500px; }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,14 +35,11 @@
             <li><a href="myani.html">애니메이션</a></li>
             <li><a href="myani2.html">토끼와 거북이</a></li>
         </ul>
-        <figure>
-            <img width="180" height="80" src="m.png" alt="홍길동">
-        </figure>
     </nav>
     <section id="main">
         <article>
-            <h1>CSS</h1>
-            <p>HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일 시트 언어이다.</p>
+            <img id="img1" src="rabbit.png">
+            <img id="img2" src="turtle.png">
         </article>
     </section>
     <footer>Copyright (c) 2023 Hong</footer>

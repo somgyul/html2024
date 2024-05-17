@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Page</title>
+    <title>애니메이션 효과</title>
     <link type="text/css" rel="stylesheet" href="mycss.css">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: 5s myanim;
+            animation-iteration-count: 10;
+        }
+
+        @keyframes myanim {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: red; left: 100px; top: 30px;}
+            50% {background-color: yellow; left: 200px; top: 0px;}
+            75% {background-color: blue; left: 100px; top: 30px;}
+            100% {background-color: blue; left: 0px; top: 0px;}
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,13 +39,12 @@
             <li><a href="myani2.html">토끼와 거북이</a></li>
         </ul>
         <figure>
-            <img width="180" height="80" src="m.png" alt="홍길동">
+            <img width="150" height="60" src="m.png" alt="홍길동">
         </figure>
     </nav>
     <section id="main">
         <article>
-            <h1>CSS</h1>
-            <p>HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일 시트 언어이다.</p>
+            <div></div>
         </article>
     </section>
     <footer>Copyright (c) 2023 Hong</footer>
