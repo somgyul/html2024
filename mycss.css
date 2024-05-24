@@ -34,3 +34,9 @@ footer {
     font-size: 90%;
     clear: both;
 }
+
+@media screen and (max-width: 480px) {
+    section#main, nav {
+        width: 100%;
+    }
+}
